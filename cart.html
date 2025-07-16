@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+
+<style>
+
+    .cart-section{
+        min-height: 50vh !important;
+        flex-direction: column;
+        
+        max-height: auto !important;
+      
+
+        
+         background-color: rgb(230, 230, 230) !important;
+
+    }
+
+    main{
+     
+   
+      display: flex;
+   flex-direction: row !important;
+    }
+
+.check-out{
+  min-height: 10vh;
+min-width: 375px;
+max-width: 500px;
+display: flex;
+align-items: flex-start !important;
+justify-content:flex-start;
+flex-direction: column;
+
+padding:10px;
+  background-color: rgb(216, 216, 216); ;
+
+}
+@media (min-width:1000px) and (max-width:3000px) {
+  .check-out{
+    height: 100%;
+  }
+  
+}
+.promo{
+  display: flex;
+
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+input{
+  width: 80%;  padding: 10px;
+}
+.promo button{
+  color: white;
+  background-color: rgb(46, 119, 255);
+  width: 20%;  padding: 11px;
+  border: 1px solid rgba(0, 0, 0, 0.329);
+}
+.shoping{
+  text-transform: capitalize;
+
+  width: 100%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.shoping h1{
+  text-align: left !important;
+  padding: 30px 5px !important;
+    font-size: large !important;
+  font-weight: lighter !important;
+  width: 70%;
+}
+.shoping div{
+  font-size: larger;
+  font-weight: 600;
+
+ 
+}
+.total-price{
+
+  width: 100% !important;
+  border-top:1px solid rgba(0, 0, 0, 0.288) ;
+
+}
+
+#check-out{
+   width: 100% !important;
+  font-weight: lighter !important;
+  width: 90%;padding: 10px;
+  border-radius: 5px;
+  border: 1px black solid;
+  background-color: rgb(69, 69, 255);
+  font-size: larger;
+  color: white;
+  
+
+}
+</style>
+</script>
+</head>
+
+<body  class="body">
+  <header>
+    <div class="logo">
+      <span><i class="bx bxs-zap"></i></span>Next <span>Shop</span>
+    </div>
+    <div class="nav">
+      <a href="./index.html">home</a>
+      <a href="">shop</a>
+      <a href="">categories</a>
+      <a href="">about</a>
+      <a href="">contact</a>
+    </div>
+    <div class="nav-cart">
+      <i class="bx bx-search-alt-2" ></i>
+      <a href="./cart.html">    <i class="bx bxs-cart-alt"></i></a>
+  
+
+    </div>
+    <div class="mobile-nav">
+      <a href="./index.html">home</a>
+      <a href="">shop</a>
+      <a href="">categories</a>
+      <a href="">about</a>
+      <a href="">contact</a>
+    </div>
+    <i class="bx bx-menu" id="break-point"></i>
+  </header>
+  <hero>
+
+    <div class="headline">
+      <h1> Premium Tech for Your <br> Digital Life</h1>
+      <p>Discover the latest gadgets and electronics at unbeatable prices.
+
+      </p>
+    </div>
+    <button>shop now</button>
+  </hero>
+  <main class="main">
+
+<div class="cart-section" id="cart-section">
+
+<a href="#" id="cart">Your cart <i class='bx bxs-shopping-bag' ></i></i> </a>
+
+  
+
+
+
+<!-- <div class="task">
+     <img src="./photo-1593642632823-8f785ba67e45.avif" alt="">
+     <div class="task-name">iPhone 14 Pro Max</div>
+    <div class="task-price">$1099.00</div>
+    <i class="bx bxs-trash-alt delete-icon"></i>
+    
+</div> -->
+
+
+</div>
+
+<div class="check-out">
+<div class="promo">
+  <input type="text" placeholder="Promocode">
+  <button>submit</button>
+
+</div>
+<div class="shoping">
+  <h1>Subtotal</h1>
+  <div > $<span id="shop">0</span></div>
+</div>
+<div class="shoping">
+  <h1>shiping</h1>
+  <div ><span id="ship">free</span></div>
+</div>
+<div class="shoping">
+  <h1>total</h1>
+  <div >$<span id="total">0</span></div>
+</div>
+
+<button id="check-out">check out</button>
+</div>
+
+  </main>
+  <footer>
+    <div class="shop-detail ">
+      <div class="name">
+     <span><i class="bx bxs-zap"></i></span>Next <span>Shop</span>
+     <p>Your one-stop shop for premium electronics and gadgets at competitive prices.</p>
+      </div>
+      <div class="icons">
+<a href="https://www.facebook.com/Drag0nzxy/"><i class='bx bxl-facebook-circle'></i></a>
+<a href="https://www.facebook.com/Drag0nzxy/">
+<i class='bx bxl-instagram-alt' ></i></a>
+<a href="https://www.facebook.com/Drag0nzxy/">
+<i class='bx bxl-youtube' ></i></a>
+
+      </div>
+      <div class="support">
+         <h1>supoprt</h1>
+        <a href="https://www.facebook.com/Drag0nzxy/">contact us</a>
+        <a href="">faqs</a>
+        <a href="">return and exchange</a>
+        <a href=""> privacy policy</a>
+      </div>
+      <div class="contact">
+        <h1>contact</h1>
+        <a href="https://www.facebook.com/Drag0nzxy/"> <span><i class='bx bxs-map' ></i></span>
+Mirpur, Dhaka
+        </a>
+        <a href="https://www.facebook.com/Drag0nzxy/"> <span><i class='bx bxs-phone-call' ></i></i></span>
++8801628233585
+        </a>
+        <a href="https://www.facebook.com/Drag0nzxy/"> <span><i class='bx bx-envelope' ></i></span>
+thedragonboyz79@gmail.com
+        </a>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <hr color="black">
+      <p>
+© Mehedi Hasan.All Right Reserved</p>
+    </div>
+  </footer>
+
+  <script>
+
+
+let cartSection= document.getElementById("cart-section")
+
+document.addEventListener("DOMContentLoaded" ,e=>{
+
+    e.preventDefault()
+    cartSection.innerHTML = localStorage.getItem("cart")
+
+        cartSection.addEventListener("click",e=>{
+        if(e.target.classList.contains("delete-icon")){
+            e.target.closest(".task").remove();
+            
+            localStorage.setItem("cart",cartSection.innerHTML)
+                cartSection.innerHTML= localStorage.getItem("cart") 
+                update()
+         }
+
+       
+    })
+   
+
+update()
+  
+
+})
+
+const hamBtn =document.getElementById("break-point");
+const mobileNav= document.querySelector(".mobile-nav")  
+const nav= document.querySelector(".nav")  
+hamBtn.addEventListener("click",e=>{
+    e.preventDefault()
+    mobileNav.classList.toggle("show-mobile-nav")
+    mobileNav.classList.toggle("mobile-nav")
+});
+
+
+function update()
+{
+      let total =document.getElementById("total")
+    let ship = document.getElementById("ship")
+    let shop =document.getElementById("shop")
+    let checkOut =document.getElementById("check-out")
+let totalAmount=0;
+prices = document.querySelectorAll(".task-price")
+prices.forEach(price => {
+
+let amount = parseFloat(price.textContent.replace(/[^0-9.]/g, ""));
+
+totalAmount+=amount;
+
+shop.innerText= totalAmount;
+total.innerText= totalAmount;
+});
+
+}
+
+  </script>
+</body>
+
+</html>
