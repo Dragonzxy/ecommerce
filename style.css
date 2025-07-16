@@ -35,7 +35,7 @@ body{
     "footer footer footer";
     min-height: 100vh;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 100px 45vh 66vh 1fr 300px;
+  grid-template-rows: 100px 47vh 66vh 1fr 300px;
 
 
 }
@@ -506,7 +506,7 @@ body{
     "footer footer footer";
     min-height: 100vh;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 100px 45vh 1000px 1fr 700px;
+  grid-template-rows: 100px 47vh 1000px 1fr 700px;
 }
 
 footer{
